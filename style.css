@@ -1,0 +1,567 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+#hero
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#heroimage img
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+}
+#overlay 
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+    background-color: black;
+    opacity: 0.7;
+}
+#logo-left img
+{
+    width: 190px;
+    height: 45px;
+    position: absolute;
+    top: 25px;
+    left: 130px;
+    background-size: cover;
+}
+#right-button button
+{
+    width: 90px;
+    height: 35px;
+    position: absolute;
+    background-color: red;
+    top: 25px;
+    left: 80%;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+}
+#right-button button:hover
+{
+    background-color: rgb(146, 5, 5);
+}
+#hero-heading h1
+{
+    width: 890px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    left: 180px;
+    font-family: 'Protest Strike', sans-serif;
+    color: #fff;
+    font-size: 4vw;
+}
+#hero-para1 p
+{
+    width: 550px;
+    height: 30px;
+    position: absolute;
+    top: 400px;
+    left: 450px;
+    font-size: 20px;
+    color: #fff;
+}
+#hero-para2 p
+{
+    width: 630px;
+    height: 30px;
+    position: absolute;
+    top: 450px;
+    left: 340px;
+    color: #fff;
+    font-size: 18px;
+    
+}
+#input-search input
+{
+    width: 340px;
+    height: 50px;
+    position: absolute;
+    top: 500px;
+    left: 340px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    border: 1px solid #fff;
+}
+#button-started button
+{
+    width: 178px;
+    height: 50px;
+    position: absolute;
+    background-color: rgb(255, 1, 1);
+    top: 500px;
+    left: 690px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    transition: 1s;
+}
+#button-started button:hover
+{
+    background-color: rgb(146, 5, 5);
+}
+.ri-arrow-right-line
+{
+    font-size: 2vw;
+}
+/* MEDIA QUERIES */
+@media (max-width:700px)
+{
+    #hero
+    {
+        overflow: hidden;
+    }
+    #page2 #enjoy-tv h1
+    {
+        font-size: 25px;
+        left: 10px;
+    }
+    #hero #heroimage #hero-heading h1
+    {
+       font-size: 20px;
+       left: 100px;
+       top: 250px;
+    }
+    #hero #heroimage #logo-left img
+    {
+        width: 80px;
+        left: 50px;
+
+    }
+    #hero #heroimage img
+    {
+        width: 100%;
+    }
+    #hero #heroimage #hero-para1 p
+    {
+        left: 140px;
+        font-size: 20px;
+        top: 300px;
+
+    }
+    #hero #heroimage #hero-para2 p
+    {
+        left: 30px;
+        font-size: 15px;
+        top: 350px;
+    }
+    #hero #heroimage #input-search input
+    {
+        left: 25px;
+        width: 250px;
+        height: 40px;
+        top: 400px;
+    }
+    #hero #heroimage #button-started button
+    {
+        left: 280px;
+        width: 150px;
+        height: 40px;
+        top: 400px;
+    }
+    #page2
+    {
+        overflow: hidden;
+    }
+    #page2 #enjoy-description p
+    {
+       font-size: 10px;
+       left: 10px;
+    }
+    #page2 #enjoy-trailer video
+    {
+        left: 250px;
+        width: 200px;
+        height: 250px;
+        top: 20px;
+    }
+    #page2 #tv img
+    {
+        left: 250px;
+        width: 200px;
+        height: 250px;
+        top: 20px;
+    }
+    #page4 #text-1 h1
+    {
+        left: 10px;
+        font-size: 30px;
+    }
+    #page4 #para1 p
+    {
+        left: 10px;
+        font-size: 15px;
+        top: 150px;
+    }
+    #strange 
+    {
+        left: 10px;
+    }
+    #kid-image img 
+    {
+        width: 100px;
+        height: 100px;
+    }
+    #page6 #frequent h1
+    {
+        font-size: 30px;
+        left: 90px;
+    }
+    #input-email input
+    {
+        position: absolute;
+        left: 10px;
+    }
+    #page8 a
+    {
+     font-size: 14px;
+    }
+    #page8 
+    {
+     height: 90vh;
+    }
+    #page7 #email-head
+    {
+        display: none;
+    }
+    #page7
+    {
+        height: 50vh;
+    }
+}
+/* GRID SYSTEM */
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+.row::after
+{
+    content:"" ;
+    clear: both;
+    display: table;
+}
+[class*="col-"]
+{
+    float: left;
+    padding: 15px;
+}
+.container
+{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#page2
+{
+    border-top: 10px solid #292828;
+    width: 100%;
+    height: 70vh;
+    background-color: #000;
+    position: relative;
+    border-top: 10px solid #292828;
+}
+#enjoy-tv h1
+{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    top: 100px;
+    left: 100px;
+    font-size: 55px;
+    font-family: 'Protest Strike', sans-serif;
+    color: #fff;
+}
+#enjoy-description p
+{
+    position: absolute;
+    width: 450px;
+    height: 200px;
+    color: #fff;
+    top: 170px;
+    left: 95px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+#enjoy-trailer video
+{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 60px;
+    left: 800px;
+}
+#tv img
+{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 60px;
+    left: 800px;
+}
+/* PAGE3 */
+#page3
+{
+    border-top: 10px solid #292828;
+    width: 100%;
+    height: 80vh;
+    background-color: #000;
+    position: relative;
+    border-top: 10px solid #292828;
+}
+#page3 #strange img
+{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+#page3 #stranges video
+{
+    width: 400px;
+    height: 70px;
+    position: absolute;
+    top: 340px;
+    left: 70px;
+}
+#page3 #strangess
+{
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    top: 100px;
+    left: 800px;
+    font-size: 20px;
+    font-family: 'Protest Strike', sans-serif;
+    color: #fff;
+}
+#page3 #strangesss p
+{
+    width: 350px;
+    height: 70px;
+    position: absolute;
+    top: 255px;
+    left: 800px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 19px;
+}
+#page4
+{
+    width: 100%;
+    height: 70vh;
+    background-color: #000;
+    border-bottom: 10px solid #292828;
+    border-top: 10px solid #292828;
+    position: relative;
+}
+#text-1 h1
+{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 140px;
+    font-family: 'Protest Strike', sans-serif;
+    color: #fff;
+    font-size: 60px;
+}
+#para1 p
+{
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    left: 140px;
+    top: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+#page5
+{
+    width: 100%;
+    height: 70vh;
+    background-color: #000;
+    position: relative;
+    border-bottom: 10px solid #292828;
+}
+#page5 #kid-image img
+{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 115px;
+    top: 70px;
+}
+#page5 #kid-text h1
+{
+    width: 450px;
+    height: 150px;
+    position: absolute;
+    left: 800px;
+    top: 80px;
+    font-family: 'Protest Strike', sans-serif;
+    color: #fff;
+    font-size: 50px;
+}
+#page5 #kid-para
+{
+    width: 450px;
+    height: 150px;
+    position: absolute;
+    left: 800px;
+    top: 240px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 23px;
+}
+#page6
+{
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    background-color: #000;
+}
+#frequent h1
+{
+    width: 600px;
+    height: 60px;
+    position: absolute;
+    top: 25px;
+    left: 320px;
+    font-family: 'Protest Strike', sans-serif;
+    color: #fff;
+    font-size: 50px;
+}
+#page7
+{
+    width: 100%;
+    height: 200vh;
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+}
+#page7 #accordionExample #question
+{
+   background-color: #292828;;
+   color: #fff;
+
+}
+#page7 #accordion1
+{
+    background-color: #292828;
+    color: #fff;
+    margin: 10px;
+}
+#page7 .accordion2
+{
+    margin-bottom: 20px;
+}
+#email-head
+{
+    position: absolute;
+    width: 600px;
+    height: 40px;
+    top: 950px;
+    left: 300px;
+    color: #fff;
+    font-size: 18px;
+}
+#input-email input
+{
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    top: 80px;
+    left: 2px;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border: 1px solid #fff;
+}
+#email-button button
+{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    top: 80px;
+    left: 450px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+}
+#email-button button:hover
+{
+    background-color: rgb(146, 5, 5);
+}
+#page8
+{
+    border-top: 10px solid #292828;
+    position: relative;
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+}
+#page8 .row a
+{
+    color: #918f8f;
+}
+#language select
+{
+    position: absolute;
+    background-color: #1a1919;
+    width: 120px;
+    height: 35px;
+    left: 70px;
+    color: #fff;
+    border-radius: 5px;
+}
+#disabled p
+{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    left: 70px;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+#icon
+{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: #000;
+}
+
